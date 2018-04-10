@@ -4,6 +4,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
+  context: __dirname,
+  node: {
+    __filename: true
+  },
   entry: {},
   module: {
     loaders: [
